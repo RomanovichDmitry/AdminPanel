@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+html {
+    font-size: calc(5px + 1vw);
+    line-height: 2;
+    font-family: 'Cuprum Bold';
+}
+
 a { 
     text-decoration: none;
 }
