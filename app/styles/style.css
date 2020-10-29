@@ -308,6 +308,10 @@ template {
   margin: 0;
   padding: 0; }
 
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+
 a {
   text-decoration: none; }
 
@@ -317,14 +321,88 @@ li {
 .container {
   width: calc(100% - 12.5%);
   margin: auto;
-  padding: 0 10px; }
-  @media (min-width: 768px) {
-    .container {
-      width: 760px;
+  padding: 0 20px; }
+
+.login {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../images/login-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  height: 100vh; }
+  .login-window {
+    position: absolute;
+    width: 63.5%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 30px -10px #000;
+    height: fit-content; }
+    .login-window__top-row {
+      background-color: #0e1a35;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2vw; }
+    .login-window__logo-img {
+      width: 18vw; }
+    .login-window__enter {
+      font-size: 2vw; }
+    .login-window__form-block {
       margin: auto;
-      padding: 0 15px; } }
-  @media (min-width: 1300px) {
-    .container {
-      width: 1300px;
-      margin: auto;
-      padding: 0 20px; } }
+      width: 47.3%; }
+    .login-window__title {
+      font-size: 3vw;
+      color: #5384ff;
+      margin-bottom: 3vw; }
+    .login-window__form {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      .login-window__form input[type='text'],
+      .login-window__form input[type='password'] {
+        border: none;
+        border-bottom: 2px solid #d4d9e3;
+        padding: 20px;
+        transition: border .3s;
+        font-size: 2vw;
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 3vw; }
+      .login-window__form input[type='text']:focus,
+      .login-window__form input[type='password']:focus {
+        outline: none;
+        border-color: #000;
+        transition: .3s; }
+    .login-window__btn {
+      align-self: center;
+      border: none;
+      background-color: #5584ff;
+      padding: 1vw 10vw;
+      font-size: 2vw;
+      color: #fff;
+      font-weight: 700;
+      margin-top: 2vw;
+      margin-bottom: 3vw;
+      border-radius: 30px;
+      position: relative; }
+      .login-window__btn::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+        background-image: url(../images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        top: 0;
+        bottom: 0;
+        right: 10px; }
