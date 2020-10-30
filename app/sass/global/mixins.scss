@@ -1,5 +1,4 @@
 @mixin container() {
-    width: calc(100% - 12.5%);
-    margin: auto;
+    width: 100%;
     padding: $padding-desktop;
 }

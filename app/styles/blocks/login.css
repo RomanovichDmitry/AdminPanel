@@ -44,6 +44,8 @@
       flex-direction: column; }
       .login-window__form input[type='text'],
       .login-window__form input[type='password'] {
+        display: block;
+        position: relative;
         border: none;
         border-bottom: 2px solid #d4d9e3;
         padding: 20px;
@@ -52,6 +54,22 @@
         padding-left: 50px;
         position: relative;
         margin-bottom: 3vw; }
+      .login-window__form .input-row {
+        position: relative; }
+      .login-window__form .input-row::before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 28px;
+        z-index: 10;
+        bottom: 0;
+        margin: auto;
+        top: -35%;
+        background-repeat: no-repeat; }
+      .login-window__form .input-row:first-child::before {
+        background-image: url(../images/user1.png); }
+      .login-window__form .input-row:nth-child(2)::before {
+        background-image: url(../images/padlock.png); }
       .login-window__form input[type='text']:focus,
       .login-window__form input[type='password']:focus {
         outline: none;

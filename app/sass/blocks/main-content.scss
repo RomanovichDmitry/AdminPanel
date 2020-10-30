@@ -1,0 +1,92 @@
+.main {
+    background-color: #f6f7fa;
+    width: 100%;
+
+    &-header-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .hidden-menu {
+
+            .arrow-menu {
+                display: block;
+                margin: auto;
+                position: absolute;
+                width: 15px;height: 15px;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                left: -20px;
+                top: 0;
+                bottom: 0;
+                background-image: url(../images/arrow-menu.png);
+            }
+        }
+
+        .user-menu {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 210px;
+            &__photo {
+                border-radius: 50%;
+            }
+
+            &__message-link,
+            &__ring-link {
+                position: relative;
+
+                .new-add {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    text-align: center;
+                    font-weight: 700;
+                    border-radius: 50%;
+                    background-color: #5584ff;
+                    top: -5px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+
+    .user-btn {
+        margin-right: 20px;
+    }
+
+    button {
+        position: relative;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+
+        .arrow {
+            display: block;
+            margin: auto;
+            position: absolute;
+            width: 15px;height: 15px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            transform: rotate(-90deg);
+            right: -20px;
+            top: 0;
+            bottom: 0;
+            background-image: url(../images/arrow-menu.png);
+        }
+    }
+
+    .bg-white {
+        background-color: #fff;
+    }
+
+    .user-menu__window {
+        position: absolute;
+        display: none;
+    }
+
+    
+}

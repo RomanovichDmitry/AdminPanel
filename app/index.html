@@ -4,8 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="styles/style.min.css">
 </head>
-<body>
-    
+<body class="main-grid">
+    <!-- Left block menu -->
+    <header class="header">
+        <ul class="header__items">
+            <li class="header__logo">
+                <a href="" class="header__logo-link">
+                    <img src="/images/Logo.png" alt="" class="header__logo-img">
+                </a>
+            </li>
+            <li class="header__menu">
+                <!-- Menu -->
+                <nav class="menu">
+                    <ul class="menu__items">  
+                        <li class="menu__item"><a href="" class="menu__link menu__link--active">Список заказов</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Товары в наличии</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Добавить товары</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Редактировать товары</a></li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="bg-white">
+            <div class="main-header-row container">
+                <button class="hidden-menu">
+                    <img src="/images/Menu.png" alt="">
+                    <span class="arrow-menu"></span>
+                </button>
+                <div class="user-menu">
+                    <a href="" class="user-menu__message-link">
+                        <img src="/images/Messages.png" alt="" class="user-menu__message-img">
+                        <span class="new new-add">1</span>
+                    </a>
+                    <a href="" class="user-menu__ring-link">
+                        <img src="/images/Notifications.png" alt="" class="user-menu__ring-img">
+                        <span class="new new-add">3</span>
+                    </a>
+                    <button class="user-btn">
+                        <img src="/images/photo-1444412667101-4eccfdeeff07.png" alt="" class="user-menu__photo">
+                        <span class="arrow"></span>
+                    </button>
+                    <div class="user-menu__window">
+                        <ul class="user-menu__items">
+                            <li class="user-menu__item">
+                                <a href="" class="user-menu__link">Редактировать профиль</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a href="" class="user-menu__link">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="orders-list container">
+            <table class="orders-table" cellspacing="0">
+                <tbody>
+                    <tr class="orders-table__filter">
+                        <td>Заказ №
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                        <td>Имя клиента
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                        <td>Почта
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                        <td>Телефон
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                        <td>Дата
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                        <td>Цена
+                            <span class="orders-table__filter-arrow"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td>Text</td>
+                        <td>Text</td>
+                        <td>Text</td>
+                        <td>Text</td>
+                        <td>Text</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
